@@ -1,0 +1,30 @@
+# Exit or Restart BSPWM
+super + shift + {q,r}
+	bspc {quit,wm -r}
+
+super + shift + p
+	killall polybar
+
+#Open Terminal
+super + Return
+	alacritty
+
+#Close Window
+super + w
+	bspc node -c
+
+#Start Rofi menu
+alt + space
+	rofi -show drun
+
+#Переключение рабочих столов
+super + {1,2,3,4,5}
+	bspc desktop -f {1,2,3,4,5}
+
+#ПЕРЕМЕЩЕНИЕ ТАЙЛИНГОВЫХ ОКОН
+super + {_,shift + }{Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
+
+# Скриншот в файл и буфер обмена
+PrtSc
+	flameshot gui -c -p ~/screenshots/screenshot.png
