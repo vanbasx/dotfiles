@@ -1,0 +1,32 @@
+#! /bin/sh
+
+#Autostart
+sxhkd &
+polybar example &
+picom &
+xsetroot -cursor_name left_ptr &
+feh --bg-scale ~/.config/wallpapers/1.png &
+setxkbmap -layout us,ru -option 'grp:alt_shift_toggle' &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+xrdb -merge ~/.Xresources &
+
+
+#Workspaces
+bspc monitor -d 1 2 3 4 5
+
+#Borders and gaps
+bspc config border_width            2
+bspc config window_gap              12
+
+bspc config active_border_color    "#89b4fa"
+bspc config focused_border_color   "#89b4fa"
+
+#Pointer actions
+bspc config pointer_modifer         super
+
+#Disable borders and gaps if only 1 window opening
+bspc config single_monocle          true
+bspc config borderless_monocle      true
+bspc config gapless_monocle         true
+bspc config paddingless_monocle     true
+

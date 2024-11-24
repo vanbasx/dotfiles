@@ -8,7 +8,8 @@
 
 configuration {
   modi: "window,drun,ssh,combi";
-  font: "JetBrains Nerd Font 14";
+  font: "JetBrainsMono Nerd Font 14";
+  icon-theme: "Papirus";
   combi-modi: "window,drun,ssh";
   show-icons: true;
   drun-display-format: "{name} {icon}";

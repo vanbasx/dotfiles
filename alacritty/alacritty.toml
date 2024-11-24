@@ -75,8 +75,8 @@ cyan = '#94E2D5' # teal
 white = '#BAC2DE' # subtext1
 
 [font]
-normal = { family = "JetBrainsNL Mono Nerd Fonts", style = "Regular" }
-size = 13.0
+normal = { family = "FiraCode Nerd Font", style = "Regular" }
+size = 14.0
 
 [window]
 padding = {x = 8, y = 8}
