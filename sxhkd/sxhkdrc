@@ -11,11 +11,11 @@ super + shift + p
 
 #Open Terminal
 super + Return
-	alacritty
+	kitty
 
 #Close Window
-super + w
-	bspc node -k
+super + {w,q}
+	bspc node -{c,k}
 
 #Start Rofi menu
 alt + space
@@ -30,8 +30,8 @@ super + {_,shift + }{Left,Down,Up,Right}
 	bspc node -{f,s} {west,south,north,east}
 
 # Скриншот в файл и буфер обмена
-PrtSc
-	flameshot gui -c -p ~/screenshots/screenshot.png
+super + Print
+	flameshot gui
 
 
 #РЕСАЙЗ ТАЙЛИНГОВЫХ ОКОН
@@ -39,7 +39,7 @@ super + ctrl + {Left,Down,Up,Right}
 	{bspc node -z left -20 0; bspc node -z right -20 0, \
 	bspc node -z bottom 0 20; bspc node -z top 0 20, \
 	bspc node -z bottom 0 -20; bspc node -z top 0 -20, \ 
-	bspc node -z left 20 0; bspc node -z right 20 0}
+	bspc node -z left 20 0}; bspc node -z right 20 0
 
 #РЕСАЙЗ ПЛАВАЮЩИХ ОКОН
 alt + ctrl + {Left,Down,Up,Right}
@@ -53,4 +53,3 @@ alt + ctrl + {Left,Down,Up,Right}
 super + {t,shift + t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 	bspc node -g {marked,locked,sticky,private}
-

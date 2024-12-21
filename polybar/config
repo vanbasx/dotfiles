@@ -18,13 +18,13 @@
 
 
 [colors]
-background = #1E1E2E
-background-alt = #1E1E2E
-foreground = #C5C8C6
-primary = #CDD6F4
-secondary = #8ABEB7
-alert = #A54242
-disabled = #72788a
+background = #0C0D11
+foreground = #CDD6F4
+primary = #F6F5F5
+secondary = #979797
+accent = #7EBAB5
+alert = #FF4754
+disabled = #40425D
 
 [bar/example]
 width = 100%
@@ -59,11 +59,12 @@ enable-ipc = true
 type = internal/xworkspaces
 
 label-active = %name%
-label-active-foreground = #ffffff
+label-active-foreground = ${colors.foreground}
 label-active-padding = 1
 
 label-occupied = %name%
 label-occupied-padding = 1
+label-occupied-foreground = ${colors.secondary}
 
 label-urgent = %name%
 label-urgent-background = ${colors.alert}
@@ -77,24 +78,23 @@ label-empty-padding = 1
 type = internal/pulseaudio
 
 format-volume-prefix = "  "
-format-volume-prefix-foreground = ${colors.primary}
 format-volume = <label-volume>
 
 label-volume = %percentage%%
 
 label-muted = "muted "
-label-muted-foreground = ${colors.disabled}
+label-muted-foreground = ${colors.alert}
 
 [module/xkeyboard]
 type = internal/xkeyboard
 blacklist-0 = num lock
 
 label-layout = %layout%
-label-layout-foreground = ${colors.primary}
 
 label-indicator-padding = 0
 label-indicator-margin = 0
-label-indicator = CapsLock
+label-indicator = Caps!
+label-indicator-foreground = ${colors.alert}
 
 [module/date]
 type = internal/date
@@ -104,7 +104,6 @@ date = %H:%M
 date-alt = %Y-%m-%d %H:%M:%S
 
 label = %date%
-label-foreground = ${colors.primary}
 
 [settings]
 screenchange-reload = true
