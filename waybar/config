@@ -1,0 +1,45 @@
+{
+  "layer": "top",
+  "position": "bottom",
+  "modules-left": ["clock"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["custom/disk", "custom/memory", "pulseaudio"],
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "tooltip": false,
+    "all-outputs": true,
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5"
+    },
+    "persistent-workspaces": {
+      "*": 5
+    }
+  },
+  "clock": {
+    "format": "<span>󰥔 </span>{:%a, %b %d %H:%M}"
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "Muted!",
+    "on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "tooltip": false,
+    "format-icons": {
+      "default": ["", "", "󰕾", "󰕾"]
+    },
+    "scroll-step": 1
+  },
+  "custom/disk": {
+    "exec": "~/.config/waybar/scripts/disk.sh",
+    "interval": 120,
+    "tooltip": true
+  },
+  "custom/memory": {
+    "exec": "~/.config/waybar/scripts/memory.sh",
+    "interval": 5,
+    "tooltip": false
+  }
+}
