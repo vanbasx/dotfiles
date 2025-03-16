@@ -1,6 +1,6 @@
 {
   "layer": "top",
-  "position": "bottom",
+  "position": "top",
   "modules-left": ["clock"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": ["custom/disk", "custom/memory", "pulseaudio"],
@@ -20,7 +20,7 @@
     }
   },
   "clock": {
-    "format": "<span>󰥔 </span>{:%a, %b %d %H:%M}"
+    "format": "{:%a, %b %d %H:%M}"
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",
