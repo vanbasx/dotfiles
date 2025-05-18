@@ -1,64 +1,44 @@
-/* Общие стили для всей панели */
 * {
-    font-family: "SF Mono", sans-serif;
+    font-family: "SF Pro Display", sans-serif;
+    font-size: 14px;
+    color: white;
+    background: transparent;
+}
+
+#waybar {
+    background-color: rgba(28, 28, 30, 0.50);
+}
+
+#clock
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 12px;
+    color: white;
+}
+
+#clock {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+#window {
+    padding-left: 12px;
+    font-weight: 600;
+}
+
+#image.ethernetart {
+    color: white;
+}
+
+#custom-date {
+    color: white;
     font-size: 13px;
     font-weight: 700;
-  }
-  
-  #waybar {
-    /* background: #0a0a0a; */
-    background: rgba(0,0,0, 0.50);
-    color: #CDD6F4;
-  }
-  
-  
-  #clock {
-    padding-left: 18px;
-  }
-  
-  #pulseaudio {
-    padding-right: 18px;
-    padding-left: 10px;
-  }
-  
-  #pulseaudio.muted {
-    color: #F28FAD;
-  }
-  
-  #custom-disk {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-  
-  #custom-memory {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-  
-  #workspaces button {
-    transition: none;
-    color: #acb0be;
-    background: transparent;
-    padding: 7px 15px;
-    transition: color 0.2s ease
-  }
-  
-  #workspaces button.occupied {
-    transition: none;
-    color: #F28FAD;
-    background: transparent;
-    transition: color 0.2s ease
-  }
-  
-  #workspaces button.active {
-    color: #CDD6F4;
-    transition: color 0.2s ease
-  }
-  
-  #workspaces button:hover {
-    transition: none;
-    box-shadow: inherit;
-    text-shadow: inherit;
-    color: #CDD6F4;
-    border-color: transparent;
-  }
+}
+
+#pulseaudio {
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+}

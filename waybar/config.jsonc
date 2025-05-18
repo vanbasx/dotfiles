@@ -1,0 +1,45 @@
+{
+    // General Waybar configuration
+    "layer": "top",
+    "margin": 0,
+    "spacing": 10,
+    // Modules configuration
+    "modules-left": [
+        "custom/launcher",
+        "hyprland/window"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "image#ethernetart",
+        "custom/date",
+        "clock"
+    ],
+    // Module-specific configurations
+    "clock": {
+        "format": "{:%H:%M}"
+    },
+    "custom/date": {
+        // put you user here
+        "exec": "/home/ivanbas/.config/waybar/scripts/date/custom_date.sh",
+        "interval": 60,
+        "tooltip": false
+    },
+    "hyprland/window": {
+        "format": "{class}",
+        "max-length": 20,
+        "rewrite": {
+            "^(?!.*\\S).*": "Desktop"
+        }
+    },
+    "image#ethernetart": {
+        "path": "/home/ivanbas/.config/waybar/icons/wifi-white.png",
+        "size": 13
+    },
+    "pulseaudio": {
+        "format": "Volume: {volume}%",
+        "format-muted": "Muted!",
+        "on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "tooltip": false,
+        "scroll-step": 1
+    }
+}

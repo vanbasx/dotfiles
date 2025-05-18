@@ -1,1 +1,99 @@
-@theme "vanbasx-theme.rasi"
+* {
+    font:   "SF Pro Display 12";
+
+    bg0:    #222225;
+    bg1:    #4F4F53;
+    bg2:    #0860f2E6;
+
+    fg0:    #DEDEDE;
+    fg1:    #FFFFFF;
+    fg2:    #A1A1A4;
+
+    background-color:   transparent;
+    text-color:         #A1A1A4;
+
+    margin:     0;
+    padding:    0;
+    spacing:    0;
+}
+
+window {
+    background-color:   @bg0;
+    location:       center;
+    width:          640;
+    border-radius:  16;
+    border: 1px;
+    border-color:       @bg1;
+}
+
+inputbar {
+    font:       "SF Pro Display 20";
+    padding:    12px 20px;
+    spacing:    10px;
+    children:   [ icon-search, entry ];
+}
+
+icon-search {
+    expand:     false;
+    filename:   "~/.config/rofi/icons/search.png";
+    size: 24px;
+}
+
+icon-search, entry, element-icon, element-text {
+    vertical-align: 0.5;
+}
+
+entry {
+    font:   inherit;
+
+    placeholder         : "Search";
+    placeholder-color   : @fg2;
+    color: #fff;
+}
+
+message {
+    border:             2px 0 0;
+    border-color:       @bg1;
+    background-color:   @bg1;
+}
+
+textbox {
+    padding:    8px 24px;
+}
+
+listview {
+    lines:      10;
+    columns:    1;
+
+    fixed-height:   false;
+    border:         1px 0 0;
+    border-color:   @bg1;
+}
+
+element {
+    padding:            8px 20px;
+    spacing:            16px;
+    background-color:   transparent;
+}
+
+element normal active {
+    text-color: #A1A1A4;
+    background-color:   transparent;
+}
+
+element alternate active {
+    text-color: #A1A1A4;
+    background-color:   transparent;
+}
+
+element selected normal, element selected active {
+    text-color:         @fg1;
+}
+
+element-icon {
+    size:   1em;
+}
+
+element-text {
+    text-color: inherit;
+}
