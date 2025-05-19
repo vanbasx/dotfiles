@@ -1,0 +1,121 @@
+{
+    // Основные настройки
+    "editor.smoothScrolling": true,
+    "editor.stickyScroll.enabled": false,
+    "workbench.tree.enableStickyScroll": false,
+    "window.titleBarStyle": "custom",
+    "window.zoomLevel": 1, 
+    "workbench.list.smoothScrolling": true,
+    "terminal.integrated.smoothScrolling": true,
+    "editor.tabSize": 2,
+
+    // Прокрутка за пределы последней строки
+    "editor.scrollBeyondLastLine": true,
+
+    // Связанные редактирования тегов
+    "editor.linkedEditing": true,
+
+    // Автоматическое закрытие тегов
+    "html.autoClosingTags": true,
+    "javascript.autoClosingTags": true,
+    "typescript.autoClosingTags": true,
+
+    // Отображение символов
+    "editor.renderControlCharacters": true,
+
+    // Подсветка неоднозначных символов
+    "editor.unicodeHighlight.ambiguousCharacters": true,
+
+    // Быстрые подсказки
+    "editor.quickSuggestionsDelay": 0,
+
+    // Внешний вид
+    "editor.glyphMargin": false,
+    "window.customTitleBarVisibility": "auto",
+    "workbench.startupEditor": "none",
+
+    // Настройки курсора
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorBlinking": "expand",
+    "editor.cursorWidth": 0,
+
+    // Настройки шрифта
+    // "editor.fontSize": 16,
+    "editor.fontSize": 15,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Geist Mono",
+
+    // Кастомизация подсветки синтаксиса
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "comment",
+                    "keyword",
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            }
+        ]
+    },
+
+    // Настройки терминала
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorWidth": 2,
+
+    // Настройки Emmet
+    "emmet.includeLanguages": {
+        "blade": "html",
+        "php": "html",
+        "javascript": "javascriptreact"
+    },
+
+    // Настройки для Breadcrumbs
+    "breadcrumbs.enabled": true,
+    "breadcrumbs.icons": false,
+    "breadcrumbs.showKeys": false,
+    "breadcrumbs.showFiles": false,
+    "breadcrumbs.symbolPath": "off",
+    "breadcrumbs.showArrays": false,
+    "breadcrumbs.showEvents": false,
+    "breadcrumbs.showFields": false,
+    "breadcrumbs.showClasses": false,
+    "breadcrumbs.showMethods": false,
+    "breadcrumbs.showBooleans": false,
+    "breadcrumbs.showFunctions": false,
+    "breadcrumbs.showConstants": false,
+    "breadcrumbs.showEnumMembers": false,
+    "breadcrumbs.showConstructors": false,
+
+    // Настройки проверки орфографии
+    "cSpell.language": "en, ru, pl",
+    "cSpell.enabled": true,
+    "cSpell.enableFiletypes": [
+        "blade",
+        "php",
+        "jsx",
+        "tsx",
+        "ts",
+        "js",
+        "scss",
+        "sass",
+        "css",
+        "py",
+    ],
+
+    // Настройки Ecss Tractor
+    "ecsstractor_port.bem_nesting": true,
+
+    "workbench.iconTheme": "material-icon-theme",
+    "terminal.integrated.lineHeight": 0.8,
+    "editor.minimap.enabled": false,
+
+    "workbench.colorCustomizations": {
+        "scrollbar.shadow": "#ffffff00",
+    },
+    "chat.commandCenter.enabled": false,
+    "workbench.navigationControl.enabled": false,
+    "workbench.colorTheme": "AMOLED Github Theme",
+    "window.menuBarVisibility": "compact",
+}
