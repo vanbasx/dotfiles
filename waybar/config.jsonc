@@ -5,36 +5,54 @@
     "spacing": 10,
     // Modules configuration
     "modules-left": [
-        "custom/launcher",
         "hyprland/window"
     ],
+
     "modules-right": [
+        "wlr/taskbar",
         "pulseaudio",
         "image#ethernetart",
         "custom/date",
         "clock"
     ],
-    // Module-specific configurations
+
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 20,
+        "on-click": "activate",
+        "all-outputs": false,
+        "tooltip": false,
+        "ignore-list": [
+            "kitty"
+        ]
+    },
+
     "clock": {
         "format": "{:%H:%M}"
     },
+
     "custom/date": {
-        // put you user here
         "exec": "/home/ivanbas/.config/waybar/scripts/date/custom_date.sh",
         "interval": 60,
         "tooltip": false
     },
+
     "hyprland/window": {
         "format": "{class}",
         "max-length": 20,
         "rewrite": {
-            "^(?!.*\\S).*": "Desktop"
+            "^(?!.*\\S).*": "Desktop",
+            "org.gnome.Nautilus": "Files",
+            "kitty": "Terminal",
+            "Google-chrome": "Google Chrome"
         }
     },
+
     "image#ethernetart": {
         "path": "/home/ivanbas/.config/waybar/icons/wifi-white.png",
         "size": 13
     },
+
     "pulseaudio": {
         "format": "Volume: {volume}%",
         "format-muted": "Muted!",

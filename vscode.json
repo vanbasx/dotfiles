@@ -4,10 +4,14 @@
     "editor.stickyScroll.enabled": false,
     "workbench.tree.enableStickyScroll": false,
     "window.titleBarStyle": "custom",
+    "window.controlsStyle": "hidden",
     "window.zoomLevel": 1, 
     "workbench.list.smoothScrolling": true,
-    "terminal.integrated.smoothScrolling": true,
     "editor.tabSize": 2,
+    "editor.minimap.enabled": false,
+    "chat.commandCenter.enabled": false,
+    "workbench.navigationControl.enabled": false,
+    "window.menuBarVisibility": "toggle",
 
     // Прокрутка за пределы последней строки
     "editor.scrollBeyondLastLine": true,
@@ -63,6 +67,8 @@
     // Настройки терминала
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.cursorWidth": 2,
+    "terminal.integrated.smoothScrolling": true,
+    "terminal.integrated.fontSize": 13,
 
     // Настройки Emmet
     "emmet.includeLanguages": {
@@ -107,15 +113,9 @@
     // Настройки Ecss Tractor
     "ecsstractor_port.bem_nesting": true,
 
-    "workbench.iconTheme": "material-icon-theme",
-    "terminal.integrated.lineHeight": 0.8,
-    "editor.minimap.enabled": false,
-
+    // Остальное
     "workbench.colorCustomizations": {
         "scrollbar.shadow": "#ffffff00",
     },
-    "chat.commandCenter.enabled": false,
-    "workbench.navigationControl.enabled": false,
     "workbench.colorTheme": "AMOLED Github Theme",
-    "window.menuBarVisibility": "compact",
 }
